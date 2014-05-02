@@ -28,6 +28,15 @@
 		"after_header": ["header_end.html"],
 		"body": [],
 		"footer": ["footer.html"]
+	},
+
+	"web_test":
+	{
+		"header": ["header_start.html", "header_links.html"],
+		"style": [],
+		"after_header": ["header_end.html"],
+		"body": [],
+		"footer": ["footer.html"]
 	}
 }
 

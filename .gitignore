@@ -1,0 +1,9 @@
+.idea/
+bcp/
+distro/
+docs/
+documents/
+dev_poznamky/
+*.pyc
+test2.py
+testing.py

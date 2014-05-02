@@ -28,14 +28,30 @@ body {
 }
 
 /* Texts */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
 	font-weight: 700;
 	line-height: 1.2em;
-	margin: 25px 0 8px 0;
 	color: #01009F;
+}
+
+h1, h2, h5 {
+    margin: 2em 0 0.7em 0;
 	border-top: 1px solid #999;
 	border-left: 9px solid #999;
 	padding: 0.3em 0 0 0.5em;
+}
+
+h3, h4 {
+    margin: 1.3em 0 0.5em 0;
+	padding: 0.3em 0 0 0.5em;
+}
+
+h4 {
+    font-style: italic;
+}
+
+h5 {
+    font-weight: 700;
 }
 
 p {
@@ -154,7 +170,6 @@ code {
 	border-left: 3px solid #999;
 	padding-left: 10px;
 	margin-left: 5px;
-	font-size: 90%;
 }
 
 .short_line {
