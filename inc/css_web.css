@@ -1,0 +1,171 @@
+/*CSS Stylesheet for web documents*/
+
+/* CSS reset (very selective) */
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+a, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General styles */
+
+body {
+	padding: 20px;
+	text-align: left;
+	line-height: 1.6em;
+}
+
+#wrapper {
+	width: 800px;
+}
+
+/* Texts */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	line-height: 1.2em;
+	margin: 25px 0 8px 0;
+	color: #01009F;
+	border-top: 1px solid #999;
+	border-left: 9px solid #999;
+	padding: 0.3em 0 0 0.5em;
+}
+
+p {
+	padding: 2px 0 5px 0;
+	text-indent: 2em
+}
+
+a:link, a:active, a:visited {
+	color: #293F70;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #9D302D;
+}
+
+ul {
+	margin: 0 0 10px 0;
+	list-style-type: square;
+	padding-left: 2em;
+}
+
+ul ul, ol ol {
+	padding-left: 2.5em;
+}
+
+ol {
+	margin: 0 0 10px 0;
+	list-style-type: decimal;
+	padding-left: 2.5em;
+}
+
+/* Block elements (dividers, tables, images) */
+table {
+	border: 1px solid #666;
+	border-collapse: collapse;
+	width: 99%;
+	margin: 10px auto;
+}
+
+table, th, td {
+	background-color: #FFF;
+	border: 1px solid #666;
+	padding: 3px;
+}
+
+th {
+	text-align: center;
+	font-weight: 700;
+}
+
+.title, .date {
+	text-align: center;
+	background: #eee;
+	border-top: 3px solid #999;
+	color: #01009F;
+	margin: 10px 0 5px 0;
+}
+
+.title {
+	font-size: 160%;
+	line-height: 140%;
+	font-weight: 700;
+}
+
+.date {
+	color: #000;
+}
+
+.images {
+	display: block;
+	margin: 20px;
+}
+
+.images img {
+	max-width: 94%;
+	border: 3px solid #bbb;
+}
+
+.images.s {
+	width: 20%;
+}
+
+.images.m {
+	width: 40%;
+}
+
+.images.l {
+	width: 70%;
+}
+
+.images .desc {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Special texts (codes, notes, ...)*/
+pre, code {
+	background-color: #eee;
+}
+
+pre {
+	border: 1px solid #888;
+	padding: 2px 5px 2px 5px;
+	margin: 4px
+}
+
+code {
+	padding: 1px;
+	border-radius: 2px;
+}
+
+.note {
+	color: #343434;
+	border-left: 3px solid #999;
+	padding-left: 10px;
+	margin-left: 5px;
+	font-size: 90%;
+}
+
+.short_line {
+	display: block;
+	width: 200px;
+	height: 0px;
+	border-bottom: 1px solid #666;
+	margin: -4px 0 -14px 0;
+}
+
+.toc {
+	margin: 10px 0 20px 0;
+	border-bottom: 2px solid #B8B6B6;
+}

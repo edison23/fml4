@@ -1,0 +1,33 @@
+{
+	"order": ["header", "style", "js", "after_header", "pre_body", "body", "footer"],
+
+	"afixes": 
+	{
+		"js": ["<script type=\"text/javascript\">", "</script>"],
+		"style": ["<style>", "</style>"]
+	},
+
+	"plain": 
+	{
+		"header": [],
+		"body": [],
+		"footer": []
+	},
+
+	"web_plain":
+	{
+		"header": ["header_start.html", "header_end"],
+		"body": [],
+		"footer": ["footer.html"]
+	},
+
+	"web": 
+	{
+		"header": ["header_start.html"],
+		"style": ["css_web.css", "css_fontsizes.css"],
+		"after_header": ["header_end.html"],
+		"body": [],
+		"footer": ["footer.html"]
+	}
+}
+

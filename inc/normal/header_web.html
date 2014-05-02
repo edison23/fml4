@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="generator" content="edison's simple markup converter, v3.1">
+	<link id="styleshit" rel="stylesheet" type="text/css" href=".styles/style.css">
+	<link rel="stylesheet" type="text/css" href=".styles/colorbox.css">
+	<title>doc_title</title>
+
+	<script src=".styles/lib/jquery-1.9.1.js"></script>
+	<script src=".styles/lib/jquery.colorbox.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+		    $("#huge").click(function() {
+		        $("body").css("font-size","130%");
+		    });
+		    
+		    $("#bigger").click(function() {
+		        $("body").css("font-size","110%");
+		    });
+
+		    $("#normal").click(function() {
+		        $("body").css("font-size","90%");
+		    });
+
+		    $("#smaller").click(function() {
+		        $("body").css("font-size","75%");
+		    });
+
+		    $("#smallest").click(function() {
+		        $("body").css("font-size","60%");
+		    });
+
+		    $("#printstyle").click(function() {
+		    	$("#styleshit").attr("href", ".styles/style_print.css");
+		    });
+
+		    $("#normstyle").click(function() {
+		    	$("#styleshit").attr("href", ".styles/style.css");
+		    });
+
+		    $("#nostyle").click(function() {
+		    	$("#styleshit").attr("href", "");
+		    });
+
+			$(".images").colorbox();
+
+			$(".head").hover(function() {
+				$(this).children(".h_anchor").fadeIn(300);
+			},
+			function() {
+				$(this).children(".h_anchor").fadeOut(300);
+			});
+		});
+
+		$( document ).on( "mousemove", function( event ) {
+		    if (((event.pageY) - $(window).scrollTop()) < 50) {
+				$("#settings").slideDown(500)
+		    }
+		    else {
+				$("#settings").slideUp(500)
+		    }
+		});
+
+	</script>
+</head>
+
+<body>
+<div id="settings">
+	<span class="txt" id="huge">Ѭ</span>
+	<span class="txt" id="bigger">Ѭ</span>
+	<span class="txt" id="normal">Ѭ</span>
+	<span class="txt" id="smaller">Ѭ</span>
+	<span class="txt" id="smallest">Ѭ</span>
+	<span class="txt stl" id="normstyle">Normal style</span>
+	<span class="txt stl" id="printstyle">Print style</span>
+	<span class="txt stl" id="nostyle">No style</span>
+	<span style="clear:both"></span>
+</div>
+<div id="wrapper">

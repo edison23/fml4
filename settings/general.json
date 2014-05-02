@@ -1,0 +1,10 @@
+{
+	"files_prefix": "",
+	"files_suffix": ".*notes.*txt",
+	"default_doc_title": "FML dokument",
+
+	"op_bracket": "\\[",
+	"ed_bracket": "\\]",
+
+	"file_list_name": "filelist.lst"
+}

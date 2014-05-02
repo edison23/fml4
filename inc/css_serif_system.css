@@ -1,0 +1,11 @@
+/* CSS font specification for FML documents */
+
+/* General font */
+body {
+	font-family: serif;
+}
+
+/* Font for codes */
+pre, code {
+	font-family: monospace;
+}

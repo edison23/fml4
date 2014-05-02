@@ -1,0 +1,9 @@
+{
+	"print": {"color": "red", "style": "b", "type": "keyword"},
+	"return": {"color": "red", "style": "b", "type": "keyword"},
+	"if": {"color": "blue", "style": "i", "type": "keyword"},
+	"else": {"color": "blue", "style": "i", "type": "keyword"},
+	
+	"#": {"color": "#999", "style": "i", "end": "", "type": "block"},
+	"'": {"color": "maroon", "style": "b", "end": "'", "type": "block"}
+}
