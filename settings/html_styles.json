@@ -30,7 +30,7 @@
 		"footer": ["footer.html"]
 	},
 
-	"web_test":
+	"web_external_css":
 	{
 		"header": ["header_start.html", "header_links.html"],
 		"style": [],
