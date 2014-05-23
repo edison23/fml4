@@ -80,6 +80,11 @@ except:
 	print "Some of the configuration files could not be loaded. They might not exist or contain syntax errors.\nCheck the settings/ folder for following files:\nhtml_styles.json\nhtml_fonts.json\ngeneral.json"
 	exit()
 
+# Test for tempfiles folder, if doesnt exist, create it
+if not os.path.isdir(os.path.join(script_path, "tempfiles")):
+	print "Creating tempfiles folder."
+	os.makedirs(os.path.join(script_path, "tempfiles"))
+
 # Load possible styles to list so they can be listed as possible command-line parameters
 # for user
 style_choices = []
