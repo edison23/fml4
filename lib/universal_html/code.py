@@ -36,7 +36,7 @@ def main(parameters):
 			line = "</pre>\n</noprocess>\n"
 			active = 0
 			syntax = 0
-		
+
 		# If the line is within the the code, test each word and if it's in keywords, 
 		# highlight it according to definition
 		elif active == 1 and syntax == 1:
@@ -58,7 +58,12 @@ def main(parameters):
 				elif keywords[word]["type"] == "keyword":
 					line = line.replace(word, '<font color="' + keywords[word]["color"] + '"><' + keywords[word]["style"] + '>' + word + '</' + keywords[word]["style"] + '></font>')
 		
+		# If code is active, only escape lines
+		elif active == 1:
+			line = cgi.escape(line)
+		
 		# Very very very very shitty rules for escaping characters []|... (btw, why is formating broken by pipe?!)
+		# Also, it obviously doesnt work as reported by ximara
 		line = line.replace("\[", u"\x10").replace("\]", u"\x11").replace("\|", u"\x12")
 
 		f_out.write(line.encode("utf-8"))

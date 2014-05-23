@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Convert inline tags and dividers (headings, titles, ...)
-import re, json, os, sys
+import re, json, os, sys, cgi
 script_path = os.path.dirname(os.path.abspath(sys.argv[0]))
 
 def main(parameters):
@@ -27,7 +27,7 @@ def main(parameters):
 			f_out.write(line.encode("utf-8"))
 			noprocess = 1
 			continue
-			
+		
 		line = images(line, f_aux)
 		head_id, line = headings(line, head_id, f_aux)
 		line = dividers(line, f_aux)
@@ -92,7 +92,7 @@ def inline_format(line, tags, settings):
 	op_bracket = settings["op_bracket"]
 	ed_bracket = settings["ed_bracket"]
 	intags = json.load(open(os.path.join(script_path, "tagsets", "inline_format.json"), "rb" ))
-		
+	
 	res = re.match(r"(.*?)" + op_bracket + "([^ ]{1,3}) ([^" + op_bracket + "]+?)[" + ed_bracket + "|\n](.*)", line)
 	while res:
 		res_tag = res.group(2)
