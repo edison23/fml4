@@ -1,6 +1,6 @@
 {
-	"files_prefix": "",
-	"files_suffix": ".*notes.*txt",
+	"files_prefix": "notes_",
+	"files_suffix": ".txt",
 	"default_doc_title": "FML dokument",
 
 	"op_bracket": "\\[",
