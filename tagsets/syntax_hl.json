@@ -1,8 +1,10 @@
 {
 	"print": {"color": "red", "style": "b", "type": "keyword"},
 	"return": {"color": "red", "style": "b", "type": "keyword"},
-	"if": {"color": "blue", "style": "i", "type": "keyword"},
+	"if ": {"color": "blue", "style": "i", "type": "keyword"},
 	"else": {"color": "blue", "style": "i", "type": "keyword"},
+	"for ":  {"color": "#840AFF", "style": "b", "type": "keyword"},
+	" in ":  {"color": "#FF4C00", "style": "b", "type": "keyword"},
 	
 	"#": {"color": "#999", "style": "i", "end": "", "type": "block"},
 	"'": {"color": "maroon", "style": "b", "end": "'", "type": "block"}
